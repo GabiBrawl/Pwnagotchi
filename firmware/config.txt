@@ -1,0 +1,11 @@
+# Add the contents of this file to the end of the config file.
+# sudo nano /boot/config.txt
+
+# Enable I2C for RTC (DS3231)
+dtparam=i2c_arm=on
+
+# Enable RTC overlay for DS3231
+dtoverlay=i2c-rtc,ds3231
+
+# Enable SPI for E-Paper display
+dtparam=spi=on

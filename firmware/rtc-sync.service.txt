@@ -1,0 +1,17 @@
+# Create this file.
+# sudo nano /etc/systemd/system/rtc-sync.service
+
+
+# RTC Sync Service - Syncs hardware clock to system clock on boot
+[Unit]
+Description=Sync RTC Clock on Boot
+DefaultDependencies=no
+Before=sysinit.target
+
+[Service]
+Type=oneshot
+# Read time from hardware clock and set system time
+ExecStart=/sbin/hwclock --hctosys
+
+[Install]
+WantedBy=sysinit.target

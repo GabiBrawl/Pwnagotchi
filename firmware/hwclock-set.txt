@@ -1,0 +1,7 @@
+# Find and comment the lines shown in this file.
+# sudo nano /lib/udev/hwclock-set
+
+# Comment out these 3 lines to allow RTC to sync
+#if [ -e /run/systemd/system ] ; then
+# exit 0
+#fi

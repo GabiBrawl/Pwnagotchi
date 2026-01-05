@@ -2,7 +2,7 @@
 The cutest wifi packet sniffer :3
 
 # CAD Model
-I made a custom case to print for the RP0 and the E-Paper display. The model is available in [cad/case.3mf](cad/case.3mf).
+I made a custom case to print for the RP0 and the E-Paper display. The model is available in [cad/case.3mf](cad/case.3mf) and in [cad/case.step](cad/case.step).
 
 I added a lanyard loop to the side of the case as well! :D
 
@@ -17,7 +17,7 @@ The assembly should be pretty straightforward: Solder the header pins onto the R
 The top part of the case will probably be glued on once the display is in place.
 
 # BOM
-This project is very low cost. The only components are the Display, the RP0 module and an RTC clock battery.
+This project is very low cost. The only components are the Display, the RP0 module and an RTC clock battery. This list might not be accurate at all times. Check the [BOM.csv](BOM.csv) file for the most up-to-date prices and links.
 
 | Component | Part / Model | Qty | Price |
 | :--- | :--- | :--- | :--- |
