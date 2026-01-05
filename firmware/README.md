@@ -2,7 +2,7 @@
 
 The raspberry pi will be flashed with the firmware as shown in [here](https://pwnagotchi.org/3rd-party-images/index.html). After flashing the image, the following steps need to be done to enable the DS3231 RTC module.
 
-After creating and modifying the files in this folder, run the following commands in order:
+## After creating and modifying the files in this folder, run the following commands in order:
 
 ```
 # 1. Remove fake hardware clock (not needed with real RTC)
@@ -17,7 +17,7 @@ sudo systemctl enable rtc-sync.service
 sudo reboot
 ```
 
-# After rebooting, check if the RTC is working:
+## After rebooting, check if the RTC is working:
 
 ```
 # Check if RTC is detected (should show "UU" at address 0x68)
