@@ -4,7 +4,8 @@ The raspberry pi will be flashed with the firmware as shown in [here](https://pw
 
 After creating and modifying the files in this folder, run the following commands in order:
 
-```# 1. Remove fake hardware clock (not needed with real RTC)
+```
+# 1. Remove fake hardware clock (not needed with real RTC)
 sudo apt-get -y remove fake-hwclock
 sudo update-rc.d -f fake-hwclock remove
 sudo systemctl disable fake-hwclock
@@ -13,11 +14,13 @@ sudo systemctl disable fake-hwclock
 sudo systemctl enable rtc-sync.service
 
 # 3. Reboot to load new settings
-sudo reboot```
+sudo reboot
+```
 
 # After rebooting, check if the RTC is working:
 
-```# Check if RTC is detected (should show "UU" at address 0x68)
+```
+# Check if RTC is detected (should show "UU" at address 0x68)
 sudo i2cdetect -y 1
 
 # Read time from RTC
@@ -27,4 +30,5 @@ sudo hwclock -r
 sudo hwclock -w
 
 # Check system time
-date```
+date
+```
